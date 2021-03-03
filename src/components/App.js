@@ -9,11 +9,12 @@ const App = () => {
       setCharacters(data);
     });
   }, []);
-  return;
-  <div className="App">
-    Hola Mundo
-    <CharacterList />
-  </div>;
+  return (
+    <div className="App">
+      Hola Mundo
+      <CharacterList characters={characters} />
+    </div>
+  );
 };
 
 export default App;
