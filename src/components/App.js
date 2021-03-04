@@ -52,7 +52,8 @@ const App = () => {
       Hola Mundo
       <Switch>
         <Route exact path="/">
-          <Filters handleFilter={handleFilter} />
+          <Filters handleFilter={handleFilter} name={nameFilter} />
+          {/* nameFiltered para input controlado, vuelta atrás y que aparezca lo q la usuaria escribió */}
           <CharacterList characters={FilteredCharacters} />
         </Route>
         <Route path="/character/:id" render={renderCharacterDetail} />

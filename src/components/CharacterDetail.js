@@ -2,20 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CharacterDetail = (props) => {
-  console.log(props);
   if (props.character === undefined) {
     return (
       <div>
         <h2>No hay personajes con esas características</h2>
-        <Link to="/">
-          <span></span>
-        </Link>
         <p>Vuelve atrás y sigue buscando</p>
       </div>
     );
   } else {
     return (
       <div>
+        <Link to="/">
+          <span>
+            <i class="fas fa-backward">Volver</i>
+          </span>
+        </Link>
         <h2>{props.character.name}</h2>
         <Link to="/">
           <span></span>
