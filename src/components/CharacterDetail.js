@@ -2,19 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CharacterDetail = (props) => {
+  const iconStatus = () => {
+    if (props.character.status === 'Alive') {
+      return <i class="fas fa-heartbeat"></i>;
+    } else if (props.character.status === 'Dead') {
+      return <i class="fas fa-dizzy"></i>;
+    } else if (props.character.status === 'unknown') {
+      return <i class="far fa-question-circle"></i>;
+    }
+  };
   if (props.character === undefined) {
-    return (
-      <div>
-        <h2>No hay personajes con esas características</h2>
-        <p>Vuelve atrás y sigue buscando</p>
-      </div>
-    );
+    return <h1>usuario no encontrado</h1>;
   } else {
     return (
       <div>
         <Link to="/">
           <span>
-            <i class="fas fa-backward">Volver</i>
+            Volver
+            {/* <i className="fas fa-backward">Volver</i> */}
           </span>
         </Link>
         <h2>{props.character.name}</h2>
@@ -24,7 +29,7 @@ const CharacterDetail = (props) => {
         <section>
           <img src={props.character.image} alt={props.character.name} />
           <ul>
-            <li>Status: {props.character.status}</li>
+            <li>Status: {iconStatus()}</li>
             <li>Especie: {props.character.species}</li>
             <li>Origen: {props.character.origin}</li>
             <li>Episodes: {props.character.episode}</li>

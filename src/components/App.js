@@ -1,10 +1,13 @@
 import userEvent from '@testing-library/user-event';
+import '../stylesheets/App.scss';
 import { Route, Switch } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import getDataFromApi from '../services/getDataFromApi';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import Filters from './Filters';
+import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -41,7 +44,6 @@ const App = () => {
     const foundCharacter = characters.find((character) => {
       return character.id === parseInt(characterId);
     });
-    console.log(foundCharacter);
     if (foundCharacter !== undefined) {
       return <CharacterDetail character={foundCharacter} />;
     }
@@ -49,7 +51,7 @@ const App = () => {
 
   return (
     <div className="App">
-      Hola Mundo
+      <Header />
       <Switch>
         <Route exact path="/">
           <Filters handleFilter={handleFilter} name={nameFilter} />
@@ -58,6 +60,7 @@ const App = () => {
         </Route>
         <Route path="/character/:id" render={renderCharacterDetail} />
       </Switch>
+      <Footer />
     </div>
   );
 };

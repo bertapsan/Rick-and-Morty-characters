@@ -1,0 +1,12 @@
+.Card {
+  list-style: none;
+  &__name {
+    background-color: darkcyan;
+  }
+  &__species {
+    background-color: darkcyan;
+  }
+  &__image {
+    width: 200px;
+  }
+}
