@@ -5,11 +5,11 @@ import '../stylesheets/layout/_characterDetail.scss';
 const CharacterDetail = (props) => {
   const iconStatus = () => {
     if (props.character.status === 'Alive') {
-      return <i class="fas fa-heartbeat"></i>;
+      return <i className="fas fa-heartbeat"></i>;
     } else if (props.character.status === 'Dead') {
-      return <i class="fas fa-dizzy"></i>;
+      return <i className="fas fa-dizzy"></i>;
     } else if (props.character.status === 'unknown') {
-      return <i class="far fa-question-circle"></i>;
+      return <i className="far fa-question-circle"></i>;
     }
   };
   if (props.character === undefined) {

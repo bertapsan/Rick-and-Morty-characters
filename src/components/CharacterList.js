@@ -8,15 +8,19 @@ const CharacterList = (props) => {
   });
 
   const searchResults =
-    props.characters.length !== 0 ? <ul>{characterElements}</ul> : <p>No hay personajes con estas características</p>;
+    props.characters.length !== 0 ? (
+      <ul className="List__ul">{characterElements}</ul>
+    ) : (
+      <p>No hay personajes con estas características</p>
+    );
 
   return (
     <section className="List">
-      <ul className="List__ul">
-        {/* {characterElements} */}
-        {searchResults}
-        {/* <CharacterCard /> */}
-      </ul>
+      {/* <ul className="List__ul"> */}
+      {/* {characterElements} */}
+      {searchResults}
+      {/* <CharacterCard /> */}
+      {/* </ul> */}
     </section>
   );
 };

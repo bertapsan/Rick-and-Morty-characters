@@ -1,9 +1,23 @@
 @import '../core/variables';
+@import '../core/mixins';
 
 .List {
+  list-style: none;
+  background-color: $colorPalleteLightGreen;
   &__ul {
-    list-style: none;
-    background-color: $colorPalleteDarkGreen;
-    border: solid 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    :hover {
+      background: $colorPalleteDarkGreen;
+    }
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }

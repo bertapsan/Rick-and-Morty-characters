@@ -1,12 +1,32 @@
+@import '../core/variables';
+
 .Card {
   list-style: none;
-  &__name {
-    background-color: #83d2e4;
-  }
-  &__species {
-    background-color: #83d2e4;
-  }
+  border: solid 3px $colorPalleteDarkGrey;
+  border-radius: 5px;
+  background-color: $colorPalleteDarkBlue;
+  width: 240px;
+  min-height: 250px;
+  margin: 20px;
+  justify-content: center;
+  padding: 4px;
   &__image {
     width: 200px;
+    border-radius: 5px;
+  }
+  &__name {
+    text-decoration: none;
+    color: $colorPalleteLightBlue;
+    font-size: 24px;
+    font-family: $fontRickAndMorty;
+  }
+  &__species {
+    text-decoration: none;
+    color: $colorPalleteLightBrown;
+    font-size: 14px;
+  }
+  &__button {
+    width: 20px;
+    margin-left: 4px;
   }
 }
