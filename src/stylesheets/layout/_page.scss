@@ -1,14 +1,11 @@
 .App {
   //   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr;
   // grid-template-rows: 140px 70px 40px 10px;
-  padding: 20px;
+  // padding: 20px;
   grid-auto-rows: auto;
   justify-items: center;
-  background-color: red;
+  background-color: black;
   color: white;
-  &__logo {
-    width: 300px;
-  }
 }

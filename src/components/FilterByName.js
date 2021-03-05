@@ -10,9 +10,11 @@ const FilterByName = (props) => {
   };
   return (
     <>
-      <label htmlFor="name">Nombre:</label>
-      <input type="text" name="name" id="name" value={props.name} onChange={handleChange}></input>{' '}
-      {/* value={props.name} para input controlado, vuelta atrás y que aparezca lo q la usuaria escribió */}
+      <div>
+        <label htmlFor="name">Nombre: </label>
+        <input type="text" name="name" id="name" value={props.name} onChange={handleChange}></input>{' '}
+        {/* value={props.name} para input controlado, vuelta atrás y que aparezca lo q la usuaria escribió */}
+      </div>
     </>
   );
 };

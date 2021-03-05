@@ -10,12 +10,14 @@ const FilterBySpecies = (props) => {
   };
   return (
     <>
-      <label htmlFor="species">Especie:</label>
-      <select name="species" id="species" onChange={handleChange}>
-        <option value="all">Todos</option>
-        <option value="Alien">Alien</option>
-        <option value="Human">Humano</option>
-      </select>
+      <div>
+        <label htmlFor="species">Especie: </label>
+        <select name="species" id="species" onChange={handleChange}>
+          <option value="all">Todos</option>
+          <option value="Alien">Alien</option>
+          <option value="Human">Humano</option>
+        </select>
+      </div>
     </>
   );
 };

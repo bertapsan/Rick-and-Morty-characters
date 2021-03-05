@@ -1,0 +1,16 @@
+@import '../core/variables';
+
+.Footer {
+  background-color: $colorPalleteDarkBlue;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $colorPalleteLightGreen;
+  text-decoration: none;
+
+  &__small--link {
+    color: $colorPalleteLightGrey;
+  }
+}
