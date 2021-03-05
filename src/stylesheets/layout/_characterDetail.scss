@@ -1,5 +1,11 @@
+@import '../core/variables';
+
 .Detail {
+  background-color: $colorPalleteDarkGreen;
   &__section--list {
     list-style: none;
+  }
+  &__section--image {
+    width: 200px;
   }
 }

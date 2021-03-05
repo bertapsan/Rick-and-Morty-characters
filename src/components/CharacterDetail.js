@@ -27,8 +27,15 @@ const CharacterDetail = (props) => {
           <span></span>
         </Link>
         <section className="Detail__section">
-          <img src={props.character.image} alt={props.character.name} />
           <ul className="Detail__section--list">
+            <li>
+              <img
+                src={props.character.image}
+                className="Detail__section--image"
+                alt={`Imagen de ${props.character.name}`}
+                title={`Imagen de ${props.character.name}`}
+              />
+            </li>
             <li>Status: {iconStatus()}</li>
             <li>Especie: {props.character.species}</li>
             <li>Origen: {props.character.origin}</li>

@@ -11,8 +11,8 @@ const CharacterList = (props) => {
     props.characters.length !== 0 ? <ul>{characterElements}</ul> : <p>No hay personajes con estas características</p>;
 
   return (
-    <section>
-      <ul className="List">
+    <section className="List">
+      <ul className="List__ul">
         {/* {characterElements} */}
         {searchResults}
         {/* <CharacterCard /> */}

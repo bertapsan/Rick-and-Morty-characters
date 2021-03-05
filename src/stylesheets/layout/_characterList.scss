@@ -1,3 +1,9 @@
+@import '../core/variables';
+
 .List {
-  list-style: none;
+  &__ul {
+    list-style: none;
+    background-color: $colorPalleteDarkGreen;
+    border: solid 1px;
+  }
 }
