@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/layout/_characterCard.scss';
-import galaxy from '../images/galaxy.png';
 
 const CharacterCard = (props) => {
   return (
-    <li className="Card">
-      <Link to={`/character/${props.character.id}`}>
+    <Link to={`/character/${props.character.id}`}>
+      <li className="Card">
         <img
           className="Card__image"
           src={props.character.image}
@@ -15,11 +14,11 @@ const CharacterCard = (props) => {
         />
         <p className="Card__name">{props.character.name}</p>
         <p className="Card__species">
-          {props.character.species}{' '}
-          <img className="Card__button" src={galaxy} alt="Galaxy para saber más" title="Galaxy para saber más" />
+          {props.character.species}
+          <i className="fas fa-plus-circle"></i>
         </p>
-      </Link>
-    </li>
+      </li>
+    </Link>
   );
 };
 

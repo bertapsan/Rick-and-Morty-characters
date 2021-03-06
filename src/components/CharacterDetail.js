@@ -17,12 +17,7 @@ const CharacterDetail = (props) => {
   } else {
     return (
       <div className="Detail">
-        <Link to="/">
-          <span>
-            <i className="fas fa-backward"> Volver</i>
-          </span>
-        </Link>
-        <h2>{props.character.name}</h2>
+        <h2 className="Detail__h2">{props.character.name}</h2>
         <Link to="/">
           <span></span>
         </Link>
@@ -42,6 +37,11 @@ const CharacterDetail = (props) => {
             <li>Episodes: {props.character.episode}</li>
           </ul>
         </section>
+        <Link to="/">
+          {/* <span className="Detail_forward"> */}
+          <i className="fas fa-backward"></i>
+          {/* </span> */}
+        </Link>
       </div>
     );
   }

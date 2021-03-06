@@ -4,12 +4,16 @@
   list-style: none;
   border: solid 3px $colorPalleteDarkGrey;
   border-radius: 5px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
   background-color: $colorPalleteDarkBlue;
   width: 240px;
-  min-height: 250px;
+  min-height: 320px;
   margin: 20px;
   justify-content: center;
   padding: 4px;
+  &:hover {
+    transform: scale(1.1);
+  }
   &__image {
     width: 200px;
     border-radius: 5px;
@@ -25,8 +29,10 @@
     color: $colorPalleteLightBrown;
     font-size: 14px;
   }
-  &__button {
-    width: 20px;
-    margin-left: 4px;
+}
+.fa-plus-circle {
+  margin-left: 4px;
+  &:hover {
+    transform: scale(1.2);
   }
 }

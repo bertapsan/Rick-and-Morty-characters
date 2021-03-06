@@ -3,21 +3,64 @@
 
 .List {
   list-style: none;
-  background-color: $colorPalleteLightGreen;
+  background: radial-gradient(
+        circle at 0% 50%,
+        rgba(96, 16, 48, 0) 9px,
+        $colorPalleteDarkGrey 10px,
+        rgba(96, 16, 48, 0) 11px
+      )
+      0px 10px,
+    radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, $colorPalleteDarkGrey 10px, rgba(96, 16, 48, 0) 11px),
+    $colorPalleteLightGreen;
+  background-size: 20px 20px;
+  // &__unluck {
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   justify-items: center;
+  //   align-items: center;
+  //   &__unluck--text {
+  //     padding-bottom: 30px;
+  //     color: $colorPalleteDarkGrey;
+  //     background-color: rgba(255, 255, 255, 0.4);
+  //     font-family: $fontRickAndMorty;
+  //     font-size: 14px;
+  //   }
+  //   &__unluck--image {
+  //     max-width: 100px;
+  //   }
+  // }
   &__ul {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
 
-    :hover {
-      background: $colorPalleteDarkGreen;
-    }
     @include tablet {
       grid-template-columns: 1fr 1fr;
     }
     @include desktop {
       grid-template-columns: 1fr 1fr 1fr;
     }
+  }
+}
+.Unluck {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  height: 100%;
+  min-height: 100vh;
+  &__text {
+    color: $colorPalleteDarkGrey;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: $fontRickAndMorty;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+  }
+  &__image {
+    width: 200px;
+    padding-top: 20px;
   }
 }
