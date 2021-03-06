@@ -2,7 +2,6 @@
 
 .Header {
   background-color: $colorPalleteDarkGrey;
-  // background: radial-gradient(ellipse at bottom, $colorPalleteLightBrown 0%, $colorPalleteDarkGrey 100%);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -11,4 +10,8 @@
   &__logo {
     width: 300px;
   }
+}
+
+body {
+  background-color: #021027;
 }

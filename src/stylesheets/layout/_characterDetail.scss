@@ -1,28 +1,55 @@
 @import '../core/variables';
+@import '../core/mixins';
 
 .Detail {
   background-color: $colorPalleteLightGreen;
   height: 100%;
   min-height: 100vh;
-  padding: 10px 0;
-  &__h2 {
-    font-family: $fontRickAndMorty;
-    color: $colorPalleteDarkBlue;
-    font-size: 28px;
-  }
-  &__section--list {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  @include backgroundPattern;
+  &__section {
     list-style: none;
-    padding: 5px;
-  }
-  &__section--image {
-    width: 160px;
+    border: solid 3px $colorPalleteDarkGrey;
     border-radius: 5px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
+    background-color: $colorPalleteLightBlue;
+    width: 240px;
+    max-height: 340px;
+    margin: 20px;
+    // justify-content: center;
+    padding: 4px;
+    &--h2 {
+      font-family: $fontRickAndMorty;
+      color: $colorPalleteDarkBlue;
+      font-size: 28px;
+    }
+    &--list {
+      list-style: none;
+      margin-top: 20px;
+      font-size: 14px;
+      color: $colorPalleteDarkGrey;
+    }
+    &--image {
+      width: 160px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
+    }
   }
+}
+.backward {
+  width: 40px;
+  height: 40px;
+  background-color: $colorPalleteLightBrown;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: -22.5px;
 }
 .fa-backward {
   font-size: 20px;
   color: $colorPalleteDarkGrey;
+  line-height: 40px;
   &:hover {
     transform: translateX(2px);
   }
@@ -94,5 +121,26 @@
   }
   100% {
     transform: scale(0);
+  }
+}
+
+.NotFound {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  height: 100%;
+  min-height: 100vh;
+  @include backgroundPattern;
+  &__text {
+    @include alertText;
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+  &__image {
+    height: 200px;
+    padding-top: 20px;
   }
 }

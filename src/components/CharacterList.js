@@ -1,7 +1,7 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
 import '../stylesheets/layout/_characterList.scss';
-import NotFound from '../images/Character_Not_Found.png';
+import Unluck from '../images/Unluck_Search.png';
 
 const CharacterList = (props) => {
   const characterElements = props.characters
@@ -24,8 +24,10 @@ const CharacterList = (props) => {
       <ul className="List__ul">{characterElements}</ul>
     ) : (
       <div className="Unluck">
-        <img className="Unluck__image" src={NotFound} />
-        <p className="Unluck__text">No hay personajes con estas características</p>
+        <img className="Unluck__image" src={Unluck} />
+        <p className="Unluck__text">
+          Todos sabemos que las bodas son funerales con pastel... deja de buscar gente inexistente a la que invitar!
+        </p>
       </div>
     );
 

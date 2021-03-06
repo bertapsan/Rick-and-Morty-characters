@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/layout/_characterDetail.scss';
+import NotFound from '../images/Not_Found.png';
 
 const CharacterDetail = (props) => {
   const iconStatus = () => {
@@ -13,15 +14,29 @@ const CharacterDetail = (props) => {
     }
   };
   if (props.character === undefined) {
-    return <h1>personaje no encontrado</h1>;
+    return (
+      <div className="NotFound">
+        <img className="NotFound__image" src={NotFound} />
+        <p className="NotFound__text">
+          Put... salvapedos ! No me pongas a prueba y deja de trastear la URL o lo que sea que estás haciendo !
+        </p>
+        <Link to="/">
+          {/* <span className="Detail_forward"> */}
+          <div className="backward">
+            <i className="fas fa-backward"></i>
+          </div>
+          {/* </span> */}
+        </Link>
+      </div>
+    );
   } else {
     return (
       <div className="Detail">
-        <h2 className="Detail__h2">{props.character.name}</h2>
         <Link to="/">
           <span></span>
         </Link>
         <section className="Detail__section">
+          <h2 className="Detail__section--h2">{props.character.name}</h2>
           <ul className="Detail__section--list">
             <li>
               <img
@@ -31,15 +46,17 @@ const CharacterDetail = (props) => {
                 title={`Imagen de ${props.character.name}`}
               />
             </li>
-            <li>Status: {iconStatus()}</li>
-            <li>Especie: {props.character.species}</li>
-            <li>Origen: {props.character.origin}</li>
-            <li>Episodes: {props.character.episode}</li>
+            <li>Estatus : {iconStatus()}</li>
+            <li>Especie : {props.character.species}</li>
+            <li>Origen : {props.character.origin}</li>
+            <li>Episodios : {props.character.episode}</li>
           </ul>
         </section>
         <Link to="/">
           {/* <span className="Detail_forward"> */}
-          <i className="fas fa-backward"></i>
+          <div className="backward">
+            <i className="fas fa-backward"></i>
+          </div>
           {/* </span> */}
         </Link>
       </div>

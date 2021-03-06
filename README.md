@@ -8,7 +8,7 @@ Te invito a ver el resultado (http://beta.adalab.es/modulo-3-evaluacion-final-be
 
 ## Descripción Técnica
 
-Este proyecto parte de un reto propuesto por los profesores y consiste en programar un buscador de personajes de la serie Rick and Morty. El buscador deberá "filtrar" la información por nombre del personaje y especie (humano o alien), mostrando un listado de resultados. Igualmente deberá permitir, a la usuaria, linkar sobre cada uno de los personajes para poder descubrir un poco más de cada personaje.
+Este proyecto parte de un reto propuesto por los profesores y consiste en programar un buscador de personajes de la serie Rick and Morty. El buscador deberá "filtrar" la información por nombre del personaje y especie (humano o alien), mostrando un listado de resultados. Igualmente deberá permitir, a la usuaria, linkar sobre cada uno de los personajes para poder descubrir un poco más sobre dicho personaje.
 
 No se facilita ni diseño ni pautas de maquetación, y se solicita que la aplicación final sea responsive.
 
@@ -18,7 +18,7 @@ He iniciado el proyecto con un "sketch" de los componentes e información del AP
 
 He utilizado VisualCode para programar REACT, html y scss.
 He utilizado variables, básicamente de color y fuente de letra, y he empleado un reset inicial bastante simple pero eficaz.
-Algunos de los retos que se solicitaban y he podido lograr eran: uso de flexbox, uso de grid, botones con enlaces a puntos específicos de la página, elementos con transiciones y elementos con animaciones.
+Algunos de los retos que he podido lograr, ya fueran solicitados o de cosecha propia, han sido: filtrado por dos conceptos (nombre y especie), filtrado tanto si la usuaria introduce el texto en mayúsculas como en minúsculas, ordenación alfabética de resultados, aviso de resultado de no encontrado, aviso url no encontrada, representación iconográfica de información textual, enlace en el logo para hacer un back a Home, uso de grid, elementos con transiciones, elementos con animaciones.
 
 **More than welcome** Cualquier propuesta de mejora siempre será bienvenida!
 

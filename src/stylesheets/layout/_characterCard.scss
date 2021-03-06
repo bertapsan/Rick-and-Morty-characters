@@ -1,4 +1,5 @@
 @import '../core/variables';
+@import '../core/mixins';
 
 .Card {
   list-style: none;
@@ -7,27 +8,41 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
   background-color: $colorPalleteDarkBlue;
   width: 240px;
-  min-height: 320px;
+  min-height: 220px;
   margin: 20px;
   justify-content: center;
   padding: 4px;
+  @include tablet {
+    min-height: 320px;
+  }
   &:hover {
     transform: scale(1.1);
   }
   &__image {
-    width: 200px;
+    width: 140px;
     border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
+    @include tablet {
+      width: 200px;
+    }
   }
   &__name {
     text-decoration: none;
     color: $colorPalleteLightBlue;
-    font-size: 24px;
+    font-size: 18px;
     font-family: $fontRickAndMorty;
+    margin-top: 5px;
+    @include tablet {
+      font-size: 24px;
+    }
   }
   &__species {
     text-decoration: none;
     color: $colorPalleteLightBrown;
-    font-size: 14px;
+    font-size: 12px;
+    @include tablet {
+      font-size: 14px;
+    }
   }
 }
 .fa-plus-circle {
