@@ -1,0 +1,39 @@
+@import '../core/variables';
+@import '../core/mixins';
+
+.List {
+  list-style: none;
+  @include backgroundPattern;
+  &__ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+.Unluck {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  height: 100%;
+  min-height: 100vh;
+  &__text {
+    @include alertText;
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+  &__image {
+    width: 200px;
+    padding-top: 20px;
+  }
+}

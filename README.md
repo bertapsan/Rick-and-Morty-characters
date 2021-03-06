@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Evaluación final módulo 3 de Berta Pluma alias bertapsan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Evaluación final módulo 3** es la culminación del tercer módulo, REACT, del curso de programación front-end en Adalab. Las adalabers de la promoción L iniciamos esta senda en un no tan lejano 11 de diciembre de 2020, para siempre recordado como año de la pandemia.
 
-## Available Scripts
+## Mi web
 
-In the project directory, you can run:
+Te invito a ver el resultado (http://beta.adalab.es/modulo-3-evaluacion-final-bertapsan/)
 
-### `npm start`
+## Descripción Técnica
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este proyecto parte de un reto propuesto por los profesores y consiste en programar un buscador de personajes de la serie Rick and Morty. El buscador deberá "filtrar" la información por nombre del personaje y especie (humano o alien), mostrando un listado de resultados. Igualmente deberá permitir, a la usuaria, linkar sobre cada uno de los personajes para poder descubrir un poco más sobre dicho personaje.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+No se facilita ni diseño ni pautas de maquetación, y se solicita que la aplicación final sea responsive.
 
-### `npm test`
+Nos facilitan la siguiente API para extraer la información https://rickandmortyapi.com/documentation/#get-all-characters.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+He iniciado el proyecto con un "sketch" de los componentes e información del API requerida. He empezado con la estructura de componentes, listado de personajes, filtrado por nombre y especie, ficha de detalle y ruta.
 
-### `npm run build`
+He utilizado VisualCode para programar REACT, html y scss.
+He utilizado variables, básicamente de color y fuente de letra, y he empleado un reset inicial bastante simple pero eficaz.
+Algunos de los retos que he podido lograr, ya fueran solicitados o de cosecha propia, han sido: filtrado por dos conceptos (nombre y especie), filtrado tanto si la usuaria introduce el texto en mayúsculas como en minúsculas, ordenación alfabética de resultados, aviso de resultado de no encontrado, aviso url no encontrada, representación iconográfica de información textual, enlace en el logo para hacer un back a Home, uso de grid, elementos con transiciones, elementos con animaciones.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**More than welcome** Cualquier propuesta de mejora siempre será bienvenida!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Autora
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Si te gusta mi trabajo puedes **contactar** o conocerme un poco más mediante mi perfil de Linkedin:
+**(https://www.linkedin.com/in/bertaplumasanjurjo/)**
 
-### `npm run eject`
+## Agradecimientos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A los tres profesores: Dayana Romero (por su infinita paciencia), Iván Garrido (por su github knowledge) y Miguel del Mazo (por sus videos).
+`@@Muchas gracias!`

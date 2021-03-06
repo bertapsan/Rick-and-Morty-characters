@@ -1,0 +1,17 @@
+@import '../core/variables';
+
+.Header {
+  background-color: $colorPalleteDarkGrey;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  &__logo {
+    width: 300px;
+  }
+}
+
+body {
+  background-color: #021027;
+}
