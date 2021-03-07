@@ -21,11 +21,9 @@ const CharacterDetail = (props) => {
           Put... salvapedos ! No me pongas a prueba y deja de trastear la URL o lo que sea que estás haciendo !
         </p>
         <Link to="/">
-          {/* <span className="Detail_forward"> */}
           <div className="backward">
             <i className="fas fa-backward"></i>
           </div>
-          {/* </span> */}
         </Link>
       </div>
     );
