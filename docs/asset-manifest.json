@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.13040b08.chunk.css",
+    "main.js": "./static/js/main.592d21ac.chunk.js",
+    "main.js.map": "./static/js/main.592d21ac.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.03a77393.js",
+    "runtime-main.js.map": "./static/js/runtime-main.03a77393.js.map",
+    "static/js/2.f6b3763e.chunk.js": "./static/js/2.f6b3763e.chunk.js",
+    "static/js/2.f6b3763e.chunk.js.map": "./static/js/2.f6b3763e.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.13040b08.chunk.css.map": "./static/css/main.13040b08.chunk.css.map",
+    "static/js/2.f6b3763e.chunk.js.LICENSE.txt": "./static/js/2.f6b3763e.chunk.js.LICENSE.txt",
+    "static/media/Not_Found.e9621ba3.png": "./static/media/Not_Found.e9621ba3.png",
+    "static/media/RickandMortyLogo.46711fda.png": "./static/media/RickandMortyLogo.46711fda.png",
+    "static/media/Unluck_Search.2b79cf30.png": "./static/media/Unluck_Search.2b79cf30.png",
+    "static/media/App.scss": "./static/media/get_schwifty.c3d1dfc6.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03a77393.js",
+    "static/js/2.f6b3763e.chunk.js",
+    "static/css/main.13040b08.chunk.css",
+    "static/js/main.592d21ac.chunk.js"
+  ]
+}
