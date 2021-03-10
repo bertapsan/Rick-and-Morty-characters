@@ -13,6 +13,7 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
   const [nameFilter, setNameFilter] = useState('');
   const [speciesFilter, setSpeciesFilter] = useState('all');
+  const [episodeFilter, setEpisodeFilter] = useState(0);
   useEffect(() => {
     getDataFromApi().then((data) => {
       setCharacters(data);
@@ -22,8 +23,11 @@ const App = () => {
   const handleFilter = (data) => {
     if (data.key === 'name') {
       setNameFilter(data.value);
-    } else if (data.key === 'species') {
+    }
+    if (data.key === 'species') {
       setSpeciesFilter(data.value);
+    } else if (data.key === 'episode') {
+      setEpisodeFilter(data.value);
     }
   };
 
@@ -37,8 +41,14 @@ const App = () => {
       } else {
         return character.species === speciesFilter;
       }
+    })
+    .filter((character) => {
+      if (episodeFilter === 0 || episodeFilter === '') {
+        return true;
+      } else {
+        return character.episode === parseInt(episodeFilter);
+      }
     });
-
   const renderCharacterDetail = (props) => {
     const characterId = props.match.params.id;
     const foundCharacter = characters.find((character) => {
@@ -52,7 +62,7 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path="/">
-          <Filters handleFilter={handleFilter} name={nameFilter} />
+          <Filters handleFilter={handleFilter} name={nameFilter} episode={episodeFilter} />
           {/* nameFiltered para input controlado, vuelta atrás y que aparezca lo q la usuaria escribió */}
           <CharacterList characters={FilteredCharacters} />
         </Route>
