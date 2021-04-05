@@ -4,7 +4,7 @@
 
 ## Mi web
 
-Te invito a ver el resultado (https://bertapsan.github.io/modulo-3-evaluacion-final-bertapsan/#/)
+Te invito a ver el resultado (https://bertapsan.github.io/Rick-and-Morty-characters/#/)
 
 ## Descripción Técnica
 
